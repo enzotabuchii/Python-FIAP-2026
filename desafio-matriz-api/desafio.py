@@ -25,9 +25,9 @@ for i in range(len(status)):
 
         if percent >= 80 and percent <= 100:
             classify = "ESTÁVEL"
-        if percent >= 0 and percent < 80:
+        elif percent >= 0 and percent < 80:
             classify = "INSTÁVEL"
-        if j and j+1 in list_errors:
+        elif j and j+1 in list_errors:
             classify = "CRÍTICO"
         
 
